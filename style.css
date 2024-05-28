@@ -40,13 +40,18 @@ nav{
     display: flex;
 }
 
-nav a{
+ul{
+    display: flex;
+    list-style: none;
+}
+
+nav ul li a{
     color: white;
     text-decoration: none;
     padding: 1rem;
 }
 
-nav a:hover{
+nav ul li a:hover{
     background-color: #400101;
     font-weight: bold;
 }
