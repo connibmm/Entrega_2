@@ -18,7 +18,7 @@ header{
     position: fixed;
     top: 0;
     left: 0;
-    width: 100vw;
+    width: 100%;
     padding: 0rem 1rem 0rem 1rem;
 }
 
@@ -39,6 +39,15 @@ header picture img{
 nav{
     list-style: none;
     display: flex;
+}
+
+.navbar i{
+    font-size: 30px;
+    display: none;
+}
+
+#toggle-menu{
+    display: none;
 }
 
 ul{
@@ -65,10 +74,18 @@ main{
     gap: 3rem;
 }
 
+.hero{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
 main section{
     background-color: rgba(255, 255, 255, 0.329);
     padding: 2rem;
     border-radius: 1rem;
+    width: 100%;
+    height: auto;
 }
 
 .parisienne-regular {
@@ -97,6 +114,7 @@ main section div button{
     color: white;
     padding: 1rem 2rem;
     border-radius: 1.5rem;
+    cursor: pointer;
 }
 
 main section div button:hover{
@@ -104,13 +122,11 @@ main section div button:hover{
 }
 
 main picture{
-    width: 85rem;
-    height: 22rem;
+    width: 100%;
+    height: 21rem;
 }
 
 main picture img{
-    width: auto;
-    height: auto;
     max-width: 100%;
     max-height: 100%;
 }
@@ -126,4 +142,283 @@ main picture img{
     border-radius: 1rem;
     text-align: center;
     font-size: 0.95rem;
+}
+
+.cards{
+    display: flex;
+    flex-direction: column;
+    margin: 0rem 3rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.cards h2{
+    display: flex;
+    justify-content: center;
+    padding-bottom: .5rem;
+}
+
+.cards h4{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 1.5rem;
+    font-weight: 400;
+}
+
+.cards ul{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 2rem;
+}
+
+.cards li{
+    background-color: rgba(255, 255, 255, 0.329);
+    width: 300px;
+    padding: 2rem;
+    border-radius: 2rem;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.cards ul li picture{
+    background-color: transparent;
+}
+
+.cards ul li h3{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.cards ul li p{
+    font-size: .75rem;
+}
+
+.contacto{
+    display: flex;
+    margin: 1rem 2rem 3rem 2rem;
+    justify-content: center;
+}
+
+.contacto picture img{
+    width: 400px;
+}
+
+.contactanos{
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+}
+
+.contactanos h2{
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+
+.contactanos ul{
+    display: flex;
+    column-gap: 4rem;
+}
+
+.contactanos ul li{
+    display: flex;
+    flex-direction: column;
+}
+
+.contactanos ul li ul{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.contactanos ul li ul li{
+    display: flex;
+    flex-direction: row;
+    gap: .5rem;
+}
+
+.contactanos h3{
+    margin-bottom: 1rem;
+}
+
+.contactanos ul li img{
+    height: 1.5rem;
+}
+
+.redes{
+    display: flex;
+    justify-content: center;
+    margin-top: 3rem;
+    gap: 2rem;
+}
+
+.redes img{
+    height: 2rem;
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #cfb6b6;
+}
+
+footer p{
+    margin-bottom: 2rem;
+}
+
+footer picture img{
+    width: 10rem;
+}
+
+footer::before{
+    content: "";
+    width: 100%;
+    height: 1px;
+    background-color: rgb(168, 168, 168);
+    margin-bottom: 1.5rem;
+}
+
+@media (max-width: 768px){    
+    .navbar ul{
+        background: #400101;
+        width: 100%;
+        height: calc(100vh - 300px);
+        position: absolute;
+        top: 60px;
+        left: 0;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        display: none;
+        row-gap: 2rem;
+    }
+
+    .navbar ul li a:hover{
+        color: #180101;
+        border-radius: 1rem;
+    }
+
+    .navbar i{
+        display: block;
+        color: white;
+    }
+
+    #toggle-menu:checked ~ .navbar-list{
+        display: flex;
+    }
+
+    .hero {
+        flex-direction: column;
+    }
+
+    .main-picture{
+        display: flex;
+        justify-content: center;
+    }
+
+    .cards ul{
+        flex-direction: column;
+        flex-wrap: unset;
+    }
+
+    .contacto{
+        flex-direction: column;
+    }
+
+    .contacto-picture{
+        display: flex;
+        justify-content: center;
+    }
+
+    .contactanos{
+        display: flex;
+        align-items: center;
+    }
+
+    .contactanos ul{
+
+    }
+}
+
+@media (max-width: 360px){
+    .navbar ul{
+        background: #400101;
+        width: 100%;
+        height: calc(100vh - 300px);
+        position: absolute;
+        top: 60px;
+        left: 0;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        display: none;
+        row-gap: 2rem;
+    }
+
+    .navbar ul li a:hover{
+        color: #180101;
+        border-radius: 1rem;
+    }
+
+    .navbar i{
+        display: block;
+        color: white;
+    }
+
+    #toggle-menu:checked ~ .navbar-list{
+        display: flex;
+    }
+
+    .hero {
+        flex-direction: column;
+    }
+
+    .main-picture{
+        display: flex;
+        justify-content: center;
+    }
+
+    .parisienne-regular{
+        font-size: 32px;
+    }
+
+    .boton{
+        font-size: 12px;
+    }
+    
+    .cards h2{
+        font-size: 20px;
+    }
+
+    .cards h4{
+        text-align: center;
+    }
+
+    .cards ul{
+        flex-direction: column;
+        flex-wrap: unset;
+    }
+
+    .contacto{
+        flex-direction: column;
+    }
+
+    .contacto-picture{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+
+    }
+
+    .contactanos{
+        display: flex;
+        align-items: center;
+    }
+
+    .contactanos ul{
+        flex-direction: column;
+        row-gap: 2rem;
+    }
 }

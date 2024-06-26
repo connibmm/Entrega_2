@@ -9,17 +9,20 @@
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Parisienne&display=swap');
     </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 </head>
 <body>
     <header>
         <picture id="logo">
             <img src="img/logo_text.png" alt="logo_text">
         </picture>
-        <picture>
+        <picture id="logo-cafe">
             <img src="img/logo_img.png" alt="logo_img">
         </picture>
-        <nav>
-            <ul>
+        <nav class="navbar">
+            <label for="toggle-menu"><i class="fa-solid fa-bars"></i></i></label>
+            <input type="checkbox" id="toggle-menu">
+            <ul class="navbar-list">
                 <li><a href="">Home</a></li>
                 <li><a href="">Nosotros</a></li>
                 <li><a href="">Menú</a></li>
@@ -27,16 +30,16 @@
             </ul>
         </nav>
     </header>
-    <main>
+    <main class="hero">
         <section>
             <h1 class="parisienne-regular">Donde los sueños despiertan con el aroma del café...</h1>
             <p>Un rincón acogedor donde cada taza es un abrazo y cada momento, una experiencia especial. Ven y disfruta de un ambiente cálido y sabores que inspiran.</p>
             <div>
-                <button>Ver menú</button>
-                <button>Reservá</button>
+                <button class="boton">Ver menú</button>
+                <button class="boton">Reservá</button>
             </div>
         </section>
-        <picture>
+        <picture class="main-picture">
             <img src="img/coffeeshop.jpg" alt="Cafetería">
         </picture>
     </main>
@@ -45,5 +48,79 @@
         Nos inspiramos en la belleza de los pequeños momentos y en la magia de las conversaciones acompañadas de un buen café. Trabajamos con dedicación para brindarte no solo un excelente café, sino también una experiencia memorable que querrás repetir.
         Ven y descubre un lugar donde cada sorbo cuenta una historia y cada visita es un abrazo cálido. ¡Te esperamos!</p>
     </section>
+    <section class="cards">
+        <h2>♡ Nuestros beneficios ♡</h2>
+        <h4>A continuación te contamos cuáles son las ventajas de elegirnos:</h4>
+        <ul>
+            <li>
+                <picture><img src="img/card-cafeteria.webp" alt="Card cafetería"></picture>
+                <h3>Ambiente acogedor y tranquilo</h3>
+                <p>En Coffee&Co, ofrecemos un rincón cálido y sereno donde puedes relajarte, trabajar o disfrutar de una buena conversación. Nuestro espacio está diseñado para brindarte confort y un respiro del bullicio diario, creando el ambiente perfecto para cualquier ocasión.</p>
+            </li>
+            <li>
+                <picture><img src="img/card-cafe.webp" alt="Card café"></picture>
+                <h3>Café de alta calidad y sabor exquisito</h3>
+                <p>Nos enorgullecemos de ofrecerte café de la más alta calidad, seleccionado cuidadosamente y preparado con pasión. Cada taza está elaborada para resaltar los sabores únicos y ricos que harán de cada sorbo una experiencia memorable.</p>
+            </li>
+            <li>
+                <picture><img src="img/card-servicio.webp" alt="Card servicio"></picture>
+                <h3>Servicio personalizado y amigable</h3>
+                <p>Nuestro equipo se dedica a brindarte una atención cercana y personalizada. Nos inspiramos en crear momentos especiales para nuestros clientes, asegurándonos de que cada visita a nuestra cafetería se sienta como un cálido abrazo y una experiencia que querrás repetir.</p>
+            </li>
+        </ul>
+    </section>
+    <section class="contacto">
+        <picture class="contacto-picture"><img src="img/coffee.webp" alt="Café"></picture>
+        <div class="contactanos">
+            <h2>Contactanos</h2>
+            <ul>
+                <li>
+                    <h3>Recoleta</h3>
+                    <ul>
+                        <li>
+                            <img src="img/location-dot-solid.svg" alt="Icono-mapa">
+                            <p>Larrea 1535</p>
+                        </li>
+                        <li>
+                            <img src="img/envelope-solid.svg" alt="Icono-mail">
+                            <p>coffeeandco1@gmail.com</p>
+                        </li>
+                        <li>
+                            <img src="img/phone-solid.svg" alt="Icono-tel">
+                            <p>1154782961</p>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <h3>Palermo Soho</h3>
+                    <ul>
+                        <li>
+                            <img src="img/location-dot-solid.svg" alt="Icono-mapa">
+                            <p>Costa Rica 4574</p>
+                        </li>
+                        <li>
+                            <img src="img/envelope-solid.svg" alt="Icono-mail">
+                            <p>coffeeandco2@gmail.com</p>
+                        </li>
+                        <li>
+                            <img src="img/phone-solid.svg" alt="Icono-tel">
+                            <p>1198237428</p>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            <div class="redes">
+                <img src="img/twitter.webp" alt="Twitter">
+                <img src="img/instagram.webp" alt="Instagram">
+                <img src="img/facebook.webp" alt="Facebook">
+            </div>
+        </div>
+    </section>
+    <footer>
+        <picture>
+            <img src="img/logo-footer-oscuro.png" alt="Logo">
+        </picture>
+        <p>Hecho con ❤ por Conni</p>
+    </footer>
 </body>
 </html>
